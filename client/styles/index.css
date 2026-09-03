@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #0a0a0a;
+  color: #ffffff;
+  overflow-x: hidden;
+}
+
+/* خلفية الموقع */
+.gradient-bg {
+  background: 
+    radial-gradient(circle at 20% 50%, rgba(88, 28, 135, 0.15) 0%, transparent 50%),
+    radial-gradient(circle at 80% 50%, rgba(255, 215, 0, 0.08) 0%, transparent 50%),
+    #0a0a0a;
+  min-height: 100vh;
+}
+
+/* النصوص الذهبية */
+.gold-text {
+  color: #FFD700;
+  text-shadow: 0 0 30px rgba(255, 215, 0, 0.15);
+}
+
+/* البطاقات */
+.tournament-card {
+  background: linear-gradient(145deg, rgba(20, 20, 30, 0.95), rgba(10, 10, 20, 0.95));
+  border: 1px solid rgba(255, 215, 0, 0.1);
+  border-radius: 20px;
+  padding: 24px;
+  transition: all 0.4s ease;
+}
+
+.tournament-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(255, 215, 0, 0.3);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
+}
+
+/* الأزرار */
+.btn-gold {
+  background: linear-gradient(135deg, #FFD700, #F5C400);
+  color: #0a0a0a;
+  padding: 12px 30px;
+  border-radius: 50px;
+  border: none;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-gold:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 40px rgba(255, 215, 0, 0.3);
+}
+
+/* العدّاد */
+.countdown-container {
+  background: linear-gradient(145deg, rgba(20, 20, 30, 0.9), rgba(10, 10, 20, 0.9));
+  border-radius: 20px;
+  padding: 30px;
+  border: 1px solid rgba(179, 136, 255, 0.15);
+}
+
+.countdown-number {
+  font-size: 3.5rem;
+  font-weight: 900;
+  font-family: 'Orbitron', sans-serif;
+  background: linear-gradient(135deg, #FFD700, #b388ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.countdown-label {
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.5);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* متجاوب */
+@media (max-width: 768px) {
+  .countdown-number {
+    font-size: 2.5rem;
+  }
+}
