@@ -1,0 +1,13 @@
+{
+  "name": "freefire-tournament",
+  "version": "1.0.0",
+  "description": "FreeFire Tournament Platform",
+  "scripts": {
+    "dev": "cd client && npm run dev",
+    "build": "cd client && npm run build",
+    "preview": "cd client && npm run preview",
+    "server": "cd server && npm start"
+  },
+  "author": "MODYXBOT1",
+  "license": "MIT"
+}
